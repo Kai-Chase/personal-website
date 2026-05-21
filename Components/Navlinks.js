@@ -20,11 +20,27 @@ const Navlinks = () => {
             </div>
             <div className={styles.navlinks}>
                 <Link
-                    href='/#about'
+                    href='/about'
                     style={{ opacity: activeLink === '/#about' ? '100%' : '80%' }}>About</Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/work' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Work</Link>
+                <Link href='/poli-ed' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Policy Education</Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/facilitation' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Facilitation</Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/copyediting' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Copy Editing</Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/teaching' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Tutoring</Link>
+            </div>
+
+            <div className={styles.navlinks}>
+                <Link href='/teaching' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Teaching</Link>
+            </div>
+            <div className={styles.navlinks}>
+                <Link href='/publications' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Publications</Link>
             </div>
             <div className={styles.navlinks}>
                 <Link
