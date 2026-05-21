@@ -12,12 +12,12 @@ const HomePage = ({ currentTheme }) => {
     return (
         <div>
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
-                <h1 className={styles.heading}>{userinfo.greeting.title}</h1>
+                {/* <h1 className={styles.heading}>{userinfo.greeting.title}</h1> */ /** keeping this just in case */}
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
                 <Link
-                    href="#work"
+                    href="/contact" 
                     className={styles.cta1}
-                    style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.landingCTA}</Link>
+                    style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>{ctaTexts.contactCTA}</Link>
             </div>
             <div className={styles.homeWorkSection} id="work">
                 <h1 className={styles.workheading} data-aos="fade-up">{headings.workHomePage}</h1>
