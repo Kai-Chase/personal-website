@@ -33,7 +33,7 @@ const Navlinks = () => {
                 <Link href='/copyediting' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Copy Editing</Link>
             </div>
             <div className={styles.navlinks}>
-                <Link href='/teaching' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Tutoring</Link>
+                <Link href='/tutoring' style={{ opacity: activeLink === '/work' ? '100%' : '80%' }}>Tutoring</Link>
             </div>
 
             <div className={styles.navlinks}>
