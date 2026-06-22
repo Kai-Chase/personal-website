@@ -1,4 +1,14 @@
 <!-- PROJECT LOGO -->
+## Running the Project
+```bash
+npm run serve
+```
+
+and in another terminal
+```bash
+npm run watch
+```
+
 <br />
 <p align="center">
   <h1 align="center">NextJS Portfolio Template</h1>

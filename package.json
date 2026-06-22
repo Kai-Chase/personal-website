@@ -5,10 +5,11 @@
   "author": "Asavari Ambavane",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start": "next build",
+    "serve": "serve out/",
+    "watch": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,11 @@
   },
   "devDependencies": {
     "eslint": "7.29.0",
-    "eslint-config-next": "11.0.0"
+    "eslint-config-next": "11.0.0",
+    "nodemon": "^3.1.14",
+    "serve": "^14.2.6"
+  },
+  "nodemonConfig": {
+    "ignore": ["**/out/**", "**/.gitignore", "**/README.md"]
   }
 }
