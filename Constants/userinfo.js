@@ -45,7 +45,28 @@ export const userinfo = {
     about: {
         //this text goes at the bottom of your home page.
         content: "'Do I need to be liked? Absolutely not. I like to be liked. I enjoy being liked. I have to be liked. But it’s not like this compulsive need like my need to be praised.' Whatever the situation or conflict might be, it can almost always be traced back to this need. His conference room characters, fun runs, and copious amounts of office parties are all aimed at his need to be praised.",
-        resume: "/" //link your resume here. it can be drive link or any other link
+        resume: "/",
+        awardsGrantsFellowships: [
+            {
+                time: 'May - Oct 2020', //timespan
+                title: 'Fellowship', //eg. BTech in Compuster Engineering
+                organization: 'Kennesaw State', //eg. VJTI, Mumbai
+                description: 'Lorem ipsum dolor sit amet consectetur' //eg. secured a cgpa of 9.25 in all sems appeared in so far
+            },
+            {
+                time: 'Oct 2020',
+                title: 'Grant to study stuff',
+                organization: 'School of Public Health',
+                description: 'Lorem ipsum dolor sit amet consectetur'
+            },
+            {
+                time: 'May 2018 - Oct 2019',
+                title: 'Another Grant',
+                organization: 'School of Memes',
+                description: 'Lorem ipsum dolor sit amet consectetur'
+            },
+
+        ],
     },
     education: {
         visible: true, //set this to false if you want to omit this section
@@ -104,6 +125,7 @@ export const userinfo = {
 
 export const headings = {
     //you can customise all the headings here.
+    aboutPageAwardsSection: 'Awards, Grants & Fellowships',
     workHomePage: 'Work',
     workMainPage: 'Projects',
     capabilities: 'Capabilities',
