@@ -6,7 +6,6 @@ const Layout = ({children, toggleTheme, currentTheme}) => {
         <div>
             <Navbar toggleTheme={toggleTheme} currentTheme={currentTheme}/>
             {children}
-            <Footer currentTheme={currentTheme}/>
         </div>
     )
 }
