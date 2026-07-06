@@ -1,0 +1,32 @@
+.heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.menuList {
+    display: flex;
+    justify-content: center;
+}
+
+.menuListContainer {
+    flex-grow: 1;
+}
+
+.menuListSpacer {
+    min-width: 20%;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menuItemHeading {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

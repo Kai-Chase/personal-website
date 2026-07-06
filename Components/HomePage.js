@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
 import Education from './Education'
+import Menu from './Menu'
 
 const HomePage = ({ currentTheme }) => {
     return (
@@ -21,7 +22,7 @@ const HomePage = ({ currentTheme }) => {
             </div>
 
             <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
-                <Skills currentTheme={currentTheme} />
+                <Menu currentTheme={currentTheme} menu={userinfo.menu}/>
             </div>
             <div>
                 {/** Add testimonials here */}

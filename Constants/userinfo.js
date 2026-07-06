@@ -21,6 +21,12 @@ export const userinfo = {
         title: "Hey there, I am Michael.",
         subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
+    menu: [
+        {option: "Poli-Ed", description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.", price: "XX$"},
+        {option: "Facilitation", description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.", price: "XX$"},
+        {option: "Copy Editing", description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.", price: "Y$"},
+        {option: "Tutoring", description: "Lorem ipsum dolor sit amet consectetur adipiscing elit.", price: "Z$"}
+    ],
     capabilities: [
         //this text goes on your home page in table format.
         //For aesthetics, it is advisable for you to mention upto 4 catgeories links only.
@@ -128,6 +134,7 @@ export const headings = {
     aboutPageAwardsSection: 'Awards, Grants & Fellowships',
     workHomePage: 'Work',
     workMainPage: 'Projects',
+    menu: 'Menu',
     capabilities: 'Capabilities',
     about: 'About Me',
     education: 'Education',
