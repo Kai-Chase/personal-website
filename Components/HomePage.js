@@ -8,6 +8,8 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo'
 import Education from './Education'
 import Menu from './Menu'
+import Carousel, { CarouselItem } from './Carousel'
+import TestimonialCard from './TestimonialCard'
 
 const HomePage = ({ currentTheme }) => {
     return (
@@ -22,10 +24,16 @@ const HomePage = ({ currentTheme }) => {
             </div>
 
             <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
-                <Menu currentTheme={currentTheme} menu={userinfo.menu}/>
+                <Menu currentTheme={currentTheme} menu={userinfo.menu} />
             </div>
             <div>
-                {/** Add testimonials here */}
+                <Carousel currentTheme={currentTheme} title={headings.testimonials}>
+                    {userinfo.testimonials.map((testimonial) => {
+                        return <CarouselItem currentTheme={currentTheme}>
+                            <TestimonialCard currentTheme={currentTheme} testimonial={testimonial} />
+                        </CarouselItem>
+                    })}
+                </Carousel>
             </div>
         </div>
     );

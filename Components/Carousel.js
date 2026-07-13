@@ -6,13 +6,13 @@ import { headings } from '../Constants/userinfo'
 
 export const CarouselItem = ({ children, width, currentTheme }) => {
     return (
-        <div className={styles.carouselItem} style={{ width: width, backgroundColor: currentTheme.secondary }}>
+        <div className={styles.carouselItem} style={{ width: width }}>
             {children}
         </div>
     );
 };
 
-const Carousel = ({ children, currentTheme }) => {
+const Carousel = ({ children, currentTheme, title }) => {
     const [activeIndex, setActiveIndex] = useState(0)
     const [paused, setPaused] = useState(false);
     const [isSmall] = useMediaQuery("(max-width: 1200px)")
@@ -54,8 +54,8 @@ const Carousel = ({ children, currentTheme }) => {
     });
 
     return (
-        <div {...handlers} className={styles.carousel} id="blogs" style={{ backgroundColor: currentTheme.secondary }} data-aos="fade-up">
-            <div className={styles.blogHeading}>{headings.blogs}</div>
+        <div {...handlers} className={styles.carousel} id="blogs"  data-aos="fade-up">
+            <div className={styles.blogHeading}>{title}</div>
             <div className={styles.inner} style={{ transform: `translateX(-${activeIndex * 100}%)` }} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
                 {React.Children.map(children, (child, index) => {
                     return React.cloneElement(child, { width: isSmall ? isVerySmall ? '100%' : '50%' : '33.33%' });
