@@ -28,8 +28,8 @@ const HomePage = ({ currentTheme }) => {
             </div>
             <div>
                 <Carousel currentTheme={currentTheme} title={headings.testimonials}>
-                    {userinfo.testimonials.map((testimonial) => {
-                        return <CarouselItem currentTheme={currentTheme}>
+                    {userinfo.testimonials.map((testimonial, index) => {
+                        return <CarouselItem key={index} currentTheme={currentTheme}>
                             <TestimonialCard currentTheme={currentTheme} testimonial={testimonial} />
                         </CarouselItem>
                     })}
