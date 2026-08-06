@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import HomeProject from './HomeProject'
+import WorkSample from './WorkSample'
 import Skills from './Skills'
 import { projects } from '../Constants/projects'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

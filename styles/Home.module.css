@@ -58,6 +58,19 @@
   transform: translateY(-5px);
 }
 
+.workSampleMain {
+  width: 95%;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  border: 3px dashed;
+
+}
+
+.workSampleContent{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .projectmain{
   width: 45%;
   margin: 4rem auto;
@@ -76,9 +89,7 @@
   cursor: pointer;
 }
 
-.projectContent{
-  transform: translateY(-2.1rem)
-}
+
 
 .projectTitle{
   font-size: 18px;
