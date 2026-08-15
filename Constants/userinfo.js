@@ -5,7 +5,7 @@ import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagra
 export const userinfo = {
     logoText: "Kai Chase", //This text is visible on your navbar and footer like your logo.
     contact: {
-        email: 'michaelscott@email.com', //It is always a good idea to mention your email on your website. Good platform to communicate.
+        email: 'katiechase0329 [at] gmail [dot] com', //It is always a good idea to mention your email on your website. Good platform to communicate.
         phone: '1234567890', //Phone number is optional, if you dont want it, consider leaving it blank .
         countrycode: '+91' //It is advisable to add the country code incase you mention your contact number.
     },
