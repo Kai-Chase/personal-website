@@ -145,7 +145,7 @@ export const headings = {
     aboutPageAwardsSection: 'Awards, Grants & Fellowships',
     testimonials: 'Testimonials',
     workHomePage: 'Work',
-    workMainPage: 'Projects',
+    workMainPage: 'Work Samples',
     menu: 'Menu',
     capabilities: 'Capabilities',
     about: 'About Me',
